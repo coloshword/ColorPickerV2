@@ -1,0 +1,30 @@
+.main {
+    border: solid 3px black;
+    width: 50em;
+    height: 40em;
+    border-radius: 1em;
+}
+
+svg {
+  max-width: 300px;
+}
+
+.gradient {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  filter:brightness(100%);
+}
+
+
+/* dragging classes */
+.static {
+
+}
+.draggable {
+  cursor: move;
+}
+
+/* removes the cursor while dragging the svg */
+.dragging {
+  cursor: none;
+}

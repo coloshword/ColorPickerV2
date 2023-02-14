@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Color Picker Version 2</title>
+</head>
+<body>
+    <div class="main">   
+        <svg viewBox="0 0 100 100" onload="makeDraggable(evt)">
+            <clipPath id="clip">
+                <path d="M 50 10 A 40 40 0 1 0 50 90 A 40 40 0 1 0 50 10 Z M 50 30 A 20 20 0 1 1 50 70 A 20 20 0 1 1 50 30 Z" />
+            </clipPath>
+            <foreignObject x="0" y="0" width="100" height="100" clip-path="url(#clip)" id="svgWheell">
+                <div class="gradient static"></div>
+            </foreignObject>
+            <circle cx="25" cy="50" r="2" stroke="white" stroke-width="1.2" fill="#325CA8" class="draggable confined"/>
+        </svg>
+    </div> 
+    <script src="./dist/colorPicker.js"></script>
+</body>
+</html>
