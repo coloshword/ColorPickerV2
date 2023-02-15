@@ -2,11 +2,16 @@
     border: solid 3px black;
     width: 50em;
     height: 40em;
-    border-radius: 1em;
+    border-radius: 1em; 
+    display:flex;
+    flex-direction: row;
 }
 
+
+
 svg {
-  max-width: 300px;
+  width: 80%;
+  height: 80%;
 }
 
 .gradient {

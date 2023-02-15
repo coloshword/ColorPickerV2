@@ -101,6 +101,8 @@ function makeDraggable(evt) {
         let color = netlogoBaseColors[index];
         let hex = rgbToHex(color[0], color[1], color[2]);
         selected.setAttributeNS(null, "fill", hex);
+        let background = $("#background");
+        background.setAttributeNS(null, "fill", hex);
     }
     function getMousePosition(evt) {
         var CTM = svg.getScreenCTM();
